@@ -10,7 +10,7 @@ dp = Dispatcher()
 @dp.message(Command("start"))
 async def start(message: types.Message):
 
-    web_app_info = WebAppInfo(url="https://твой-сайт.рф/webapp/index.html")
+    web_app_info = WebAppInfo(url="https://wildaddict.github.io/code-lingo-app/index.html")
     button = InlineKeyboardButton(text="Открыть CodeLingo", web_app=web_app_info)
     markup = InlineKeyboardMarkup(inline_keyboard=[[button]])
     
